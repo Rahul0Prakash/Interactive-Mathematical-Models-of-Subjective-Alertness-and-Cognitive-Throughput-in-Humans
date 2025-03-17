@@ -61,7 +61,7 @@ Then, navigate to **`subjectiveAlertness_CognitiveThroughput.ipynb`** and run th
 #### **⏳ Sleep Timing (Modify Here)**
 ```python
 sleep_start = 0  # Sleep start time 
-wake_start = 8   # Wake time 
+wake_start = 8   # Wake time
 ```
 
 #### **📅 Simulation Time Settings**
@@ -119,13 +119,3 @@ Example Graph:
 ## 📩 Contact
 For inquiries, collaborations, or suggestions, feel free to reach out! 🚀
 ```
-
----
-
-### ✅ **Next Steps**
-📌 **To update your GitHub README:**
-1. Go to: **[Edit README](https://github.com/Rahul0Prakash/Interactive-Mathematical-Models-of-Subjective-Alertness-and-Cognitive-Throughput-in-Humans/edit/main/README.md)**
-2. Paste the updated README.md content above.
-3. Click **Commit changes**.
-
-🚀 Your repository is now **fully documented and ready for publishing!** 🎯 Let me know if you need **any refinements or additions**.
