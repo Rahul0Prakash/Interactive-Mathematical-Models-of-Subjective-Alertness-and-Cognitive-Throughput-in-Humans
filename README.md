@@ -1,0 +1,2 @@
+# Interactive-Mathematical-Models-of-Subjective-Alertness-and-Cognitive-Throughput-in-Humans
+This repository contains a Jupyter Notebook implementing the Jewett-Kronauer circadian rhythm model to simulate subjective alertness and cognitive throughput. Developed for my M.Sc. Usability Engineering thesis, it explores how **sleep patterns, light exposure, and homeostatic sleep drive impact productivity and well-being.
