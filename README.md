@@ -104,6 +104,39 @@ Example Graph:
 
 ---
 
+### **⚠️ Important Notes & Limitations**  
+
+🚨 **This model is not foolproof!** Due to **time constraints**, I couldn't implement a universal solution for all sleep schedules. However, since the algorithm **follows the baseCR protocol**, the **circadian peaks and dips remain unaffected**, even when external factors like **light exposure** vary.  
+
+#### **🔄 Workaround: Phase Shifting for Sleep Before Midnight**  
+If **your sleep period starts before midnight (e.g., 21:00 - 05:00)**, apply a **3-hour phase shift** to make it compatible.  
+
+✅ Instead of using:  
+```python
+sleep_start = 21.0  # 21:00 (9 PM)
+wake_start = 5.0    # 05:00 (5 AM)
+```
+**Use the following inputs:**  
+```python
+sleep_start = 0.0   # Equivalent to 00:00 (Midnight)
+wake_start = 8.0    # Equivalent to 08:00 (8 AM)
+```
+Then, **mentally shift the results 3 hours to the left** to align with your actual sleep schedule.
+
+---
+
+### **🧪 Experimenting with Sleep Debt & Long-Term Sleep Deprivation**  
+✔ **Modify `t_w` (sleep debt) values** to explore how different levels of sleep deprivation impact **circadian peaks and dips**.  
+✔ If you want to simulate **extended sleeplessness** (e.g., **72-hour sleep deprivation trials** like in the referenced study), **increase the simulation time**:  
+```python
+Simulation_Time = 72  # Simulate 72 hours of wakefulness
+```
+This allows you to observe **cognitive decline over prolonged sleep deprivation**.
+
+📌 **Feel free to tweak these parameters** to analyze different sleep patterns and their effects on alertness and cognitive performance. 🚀
+
+---
+
 ## 📜 References & Citations
 - **Jewett, M. E., & Kronauer, R. E. (1999).** Interactive mathematical models of subjective alertness and cognitive throughput in humans.
 - This implementation was developed for the **M.Sc. Usability Engineering thesis** at Hochschule Rhein-Waal.
